@@ -1,0 +1,20 @@
+service Chat {
+    rpc Get(Request) returns (Response) {}
+    rpc List(Requests) returns (stream Response) {}
+    rpc Record(stre)
+}
+
+message Request {
+    int lat =1;
+    int lon =2;
+}
+
+message Response {
+    int lat =1;
+    int lon =2;
+}
+
+message Requests {
+    Request lo = 1;
+    Request hi = 2;
+}
